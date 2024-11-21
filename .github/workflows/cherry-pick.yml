@@ -40,7 +40,7 @@ jobs:
 
       - name: Check PR checkboxes
         run: |
-          python ./github/scripts/checkboxes.py \
+          python ./.github/scripts/checkboxes.py \
             --github-token ${{ secrets.GITHUB_TOKEN }} \
             --github-repository ${{ github.repository }} \
             --pr-number ${{ github.event.pull_request.number || github.event.issue.number }}
