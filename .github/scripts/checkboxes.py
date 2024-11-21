@@ -8,7 +8,6 @@ from github import Github
 
 
 def get_checkboxes(s: str) -> list[str]:
-    s = s.lower()
     lines: list[str] = []
     for line in s.splitlines():
         if "* [ ]" in line or "- [ ]" in line:
