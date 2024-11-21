@@ -30,7 +30,7 @@ def main() -> None:
     print(f"Latest commit: {latest_commit.sha}")
 
     checkboxes = get_checkboxes(pr.body)
-    for comment in pr.get_comments():
+    for comment in pr.get_issue_comments():
         checkboxes += get_checkboxes(comment.body)
 
     if len(checkboxes) != 0:
