@@ -2,8 +2,6 @@ name: First time contributors
 
 on:
   pull_request_target:
-    types:
-      - opened
 
 permissions:
   contents: "write"
